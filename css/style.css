@@ -1,0 +1,30 @@
+main {
+  background-image: url(../img/back.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20%;
+}
+
+header {
+  background-image: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10%;
+}
+
+h2 {
+  color: midnightblue;
+  font-size: 400%;
+}
+
+button {
+  padding: 10px;
+  background-color: midnightblue;
+  color: white;
+}
+
+display {
+  list-style-type: none;
+  color: midnightblue;
+  font-size: 200%;
+}
