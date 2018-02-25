@@ -1,34 +1,25 @@
-var inp;
+var input;
 var count = function () {
 
-  var s = [];
-  for (var i = 1; i <= inp; i++) {
-    // s.push(3);
+
+  for (var i = 1; i <= input; i++) {
     if ((i % 3 === 0) && (i % 5 === 0)) {
-      s.push("ping pong");
+      $(".display").append("<li>" + "pingpong" + "</li>");
     } else if (i % 3 === 0) {
-      s.push("ping");
+      $(".display").append("<li>" + "ping" + "</li>");
     } else if (i % 5 === 0) {
-      s.push("pong");
+      $(".display").append("<li>" + "pong" + "</li>");
     } else {
-      s.push(i);
+      $(".display").append("<li>" + i + "</>");
     }
-    // if (i < (inp)) {
-    //   s += ',';
-    // }
-    // s += i;
-    // s.push(i++);
   }
-  return s;
+  // return s;
 };
 $(document).ready(function () {
   $("#enter form").submit(function (e) {
     e.preventDefault();
-    inp = parseInt($("#info").val());
-
-    var input = count(inp);
-    console.log(input);
-    // var darray = [];
-
+    input = parseInt($("#info").val());
+    var output = count(input);
+    $(".display").text(output);
   });
 });
