@@ -17,6 +17,7 @@ var count = function () {
 };
 $(document).ready(function () {
   $("#enter form").submit(function (e) {
+    $(".display").empty();
     e.preventDefault();
     input = parseInt($("#info").val());
     var output = count(input);
